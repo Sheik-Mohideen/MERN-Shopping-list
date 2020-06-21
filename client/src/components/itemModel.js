@@ -11,7 +11,6 @@ import {
 } from 'reactstrap';
 import {connect} from 'react-redux';
 import {addItem} from '../action/itemAction';
-import {v4 as uuidv4} from 'uuid';
 class ItemModel extends Component{
     state={
         model:false,
@@ -33,12 +32,11 @@ class ItemModel extends Component{
     {
         e.preventDefault();
         const newItem={
-            id:uuidv4(),
             name:this.state.name
         }
 
         this.props.addItem(newItem);
-        this.toggle();
+        this.toggle()
     }
     render()
     {
