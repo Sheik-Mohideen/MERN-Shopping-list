@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://sheik:Sheik@7777@cluster0-wu9vf.mongodb.net/MERN?retryWrites=true&w=majority",
+    "jwtSecret":"shoppinglist"
+}
